@@ -19,6 +19,8 @@ A soverign, autonomous cloudsharing solution
 ```mermaid
 
 graph LR
+
+subgraph SH[European Sovereign Platform hosting]
     subgraph "Identity management"
         F[OS2ID]
     end
@@ -34,5 +36,8 @@ graph LR
     subgraph "Storage"
         E[MinIO Service] --> B[Nextcloud]
     end
+end
+
+style SH color:#fff, fill:#996
 ```
 
